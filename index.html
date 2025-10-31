@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Basic</title>
+</head>
+<body>
+    <!-- <h1 id="heading"></h1> -->
+    <input type="number" id="input1"><br>
+    <input type="number" id="input2"><br>
+    <button onclick="add()">Click</button> 
+    <p>the sum is <span id="answer"></span></p>
+    <!-- <button onclick="print_msg()">Click</button> -->
+</body>
+<script>
+    //console.log("Hello!!")
+
+    // variable Section
+    var a = 10;
+    a=20;
+    //console.log(a);
+    //let b = 20;
+    const c = 30;
+
+
+    //DOM
+    //var e1 = document.getElementById("heading");
+    //e1.innerText = "Hello, World!!";
+
+    // Function
+    function print_msg(){
+        var e1 = document.getElementById("heading");
+        e1.innerText = "Hello, World!!";
+    }
+
+    function add(){
+        var i1 = document.getElementById('input1').value;
+        var i2 = document.getElementById('input2').value;
+        var ans = Number(i1)+Number(i2);
+        //console.log(ans);
+        document.getElementById("answer").innerText = ans;
+    }
+
+
+    
+
+
+
+
+
+    //c = 40; // Not Possible error
+</script>
+</html>

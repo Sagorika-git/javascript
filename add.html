@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Basic</title>
+</head>
+<body>
+    <!-- <h1 id="heading"></h1> -->
+    <input type="number" id="input1"><br>
+    <input type="number" id="input2"><br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Division</button>
+    <p>the result of <span id="op"></span>: <span id="answer"></span></p>
+<script>
+
+    function add(){
+        var i1 = document.getElementById('input1').value;
+        var i2 = document.getElementById('input2').value;
+        var ans = Number(i1)+Number(i2);
+        //console.log(ans);
+        document.getElementById("answer").innerText = ans;
+        document.getElementById("op").innerText = "Addition";
+    }
+    function sub(){
+        var i1 = document.getElementById('input1').value;
+        var i2 = document.getElementById('input2').value;
+        var ans = Number(i1)-Number(i2);
+        //console.log(ans);
+        document.getElementById("answer").innerText = ans;
+        document.getElementById("op").innerText = "Difference";
+    }
+    function mul(){
+        var i1 = document.getElementById('input1').value;
+        var i2 = document.getElementById('input2').value;
+        var ans = Number(i1)*Number(i2);
+        //console.log(ans);
+        document.getElementById("answer").innerText = ans;
+    }
+    function div(){
+        var i1 = document.getElementById('input1').value;
+        var i2 = document.getElementById('input2').value;
+        var ans = Number(i1)/Number(i2);
+        //console.log(ans);
+        document.getElementById("answer").innerText = ans;
+    }
+
+
+
+</script>
+</html>

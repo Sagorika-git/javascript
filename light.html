@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="light(1)">Light on</button>
+    <button onclick="light(0)">Light off</button>
+
+    <img id="bulb" src="light-on.jpeg">
+
+    <script>
+        function light(value){
+            var pic;
+           if(value==0){
+            pic="light-on.jpeg";
+           }
+           else{
+            pic="light-off.jpeg";
+           }
+
+           document.getElementById("bulb").src=pic;
+        }
+    </script>
+</body>
+</html>
